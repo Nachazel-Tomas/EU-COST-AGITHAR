@@ -8,3 +8,5 @@ Contact: martina.husakova.2@uhk.cz, daniela.ponce@uhk.cz, tomas.nachazel@uhk.cz
 Software required: Java SE Runtime Environment 8u211 or later, OS Win 10
 
 Software recommended: Ontological editor supporting OWL format and visualising the ontological structure, e. g. Protégé in version 5 or later (https://protege.stanford.edu/).
+
+Ontology documentation online (TRO): https://lide.uhk.cz/fim/ucitel/fshusam2/vyzkum/cost-tsunami-2020-2023/TRODocumentation/contents.html
