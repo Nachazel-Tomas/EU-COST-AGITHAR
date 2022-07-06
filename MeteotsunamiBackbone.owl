@@ -1,0 +1,34 @@
+[ {
+  "@id" : "http://agithar.uhk.cz/meteotsunami",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://agithar.uhk.cz/meteotsunami/1.0.0"
+  } ]
+}, {
+  "@id" : "http://agithar.uhk.cz/meteotsunami#MeteorologicalTsunami",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://agithar.uhk.cz/meteotsunami#Tsunami"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://agithar.uhk.cz/meteotsunami#Meteotsunami"
+  } ]
+}, {
+  "@id" : "http://agithar.uhk.cz/meteotsunami#Meteotsunami",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://agithar.uhk.cz/meteotsunami#Tsunami"
+  } ]
+}, {
+  "@id" : "http://agithar.uhk.cz/meteotsunami#NumericalModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://agithar.uhk.cz/meteotsunami#ProudmanResonance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://agithar.uhk.cz/meteotsunami#Seiches",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://agithar.uhk.cz/meteotsunami#Tsunami",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+} ]

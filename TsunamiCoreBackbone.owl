@@ -1,0 +1,674 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://agithar.uhk.cz/tsunami#"
+     xml:base="http://agithar.uhk.cz/tsunami"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:tsu="http://agithar.uhk.cz/tsunami#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://agithar.uhk.cz/tsunami">
+        <owl:versionIRI rdf:resource="http://agithar.uhk.cz/tsunami/1.0.0"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#Boulder -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#Boulder"/>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#Chile -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#Chile">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#City -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#City">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#ClimateChange -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#ClimateChange"/>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#CoastalEngineering -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#CoastalEngineering">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#ScienceBranch"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#CoastalHazard -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#CoastalHazard">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#Hazard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#Country -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#Country">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#Debris -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#Debris"/>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#Diatom -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#Diatom">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#Plant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#Disaster -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#Disaster">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#DisasterRecovery -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#DisasterRecovery"/>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#DisasterRiskReduction -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#DisasterRiskReduction"/>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#EarlyWarning -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#EarlyWarning"/>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#Earthquake -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#Earthquake">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#EarthquakeSourceObservation -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#EarthquakeSourceObservation"/>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#Equation -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#Equation">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#ScientificConstruct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#Erosion -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#Erosion"/>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#Evacuation -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#Evacuation"/>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#Event -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#Event"/>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#FieldSurvey -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#FieldSurvey"/>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#Flood -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#Flood">
+        <owl:equivalentClass rdf:resource="http://agithar.uhk.cz/tsunami#Inundation"/>
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#Foraminifera -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#Foraminifera"/>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#Fukushima -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#Fukushima">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#City"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#GIS -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#GIS"/>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#GPS -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#GPS"/>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#Geomorphology -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#Geomorphology">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#ScienceBranch"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#GreatEastJapanEarthquake -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#GreatEastJapanEarthquake">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#Earthquake"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#Hazard -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#Hazard"/>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#Holocene -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#Holocene"/>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#Hurricane -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#Hurricane">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#WeatherCondition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#ImpulseWave -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#ImpulseWave">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#Wave"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#IndianOcean -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#IndianOcean">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#SeaOrOcean"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#Indonesia -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#Indonesia">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#Inundation -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#Inundation">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#Japan -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#Japan">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#Landslide -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#Landslide">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#Liquefaction -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#Liquefaction"/>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#LongWave -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#LongWave">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#Wave"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#Mangrove -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#Mangrove">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#Plant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#Meteotsunami -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#Meteotsunami">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#Tsunami"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#Model -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#Model">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#ScientificConstruct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#NankaiTrough -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#NankaiTrough"/>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#NaturalDisaster -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#NaturalDisaster">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#Disaster"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#NaturalHazard -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#NaturalHazard">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#Hazard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#NumericalModel -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#NumericalModel">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#Model"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#NumericalSimulation -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#NumericalSimulation">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#Simulation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#PacificOcean -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#PacificOcean">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#SeaOrOcean"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#Palaeotsunami -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#Palaeotsunami">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#Tsunami"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#Paleoseismology -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#Paleoseismology">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#ScienceBranch"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#PhysicalModel -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#PhysicalModel">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#Model"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#Place -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#Place"/>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#Plant -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#Plant"/>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#Reconstruction -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#Reconstruction"/>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#RemoteSense -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#RemoteSense"/>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#Resilience -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#Resilience"/>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#Risk -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#Risk"/>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#RiskAssessment -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#RiskAssessment"/>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#Runup -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#Runup"/>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#ScienceBranch -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#ScienceBranch"/>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#ScientificConstruct -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#ScientificConstruct"/>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#SeaLevel -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#SeaLevel"/>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#SeaOrOcean -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#SeaOrOcean">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#SedimentTransport -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#SedimentTransport"/>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#Sedimentology -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#Sedimentology">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#ScienceBranch"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#SeismicHazard -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#SeismicHazard">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#Hazard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#ShallowWaterEquation -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#ShallowWaterEquation">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#Equation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#Simulation -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#Simulation">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#ScientificConstruct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#SolitaryWave -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#SolitaryWave">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#Wave"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#SouthChinaSea -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#SouthChinaSea">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#SeaOrOcean"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#Storm -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#Storm">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#WeatherCondition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#StormSurge -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#StormSurge"/>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#Subduction -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#Subduction"/>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#SubductionZone -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#SubductionZone"/>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#SubmarineLandslide -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#SubmarineLandslide">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#Landslide"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#TropicalCyclone -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#TropicalCyclone">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#WeatherCondition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#Tsunami -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#Tsunami">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#TsunamiDeposit -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#TsunamiDeposit"/>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#TsunamiEarlyWarning -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#TsunamiEarlyWarning">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#TsunamiWarning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#TsunamiEarthquake -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#TsunamiEarthquake">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#Earthquake"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#TsunamiHazard -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#TsunamiHazard">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#Hazard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#TsunamiInundation -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#TsunamiInundation">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#Inundation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#TsunamiModel -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#TsunamiModel">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#Model"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#TsunamiSimulation -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#TsunamiSimulation">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#Simulation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#TsunamiWarning -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#TsunamiWarning"/>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#TsunamiWave -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#TsunamiWave">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#Wave"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#Vulnerability -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#Vulnerability"/>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#Wave -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#Wave"/>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#WavePropagation -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#WavePropagation"/>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#WeatherCondition -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#WeatherCondition">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/tsunami#2011TohokuEarthquake -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/tsunami#2011TohokuEarthquake">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/tsunami#Earthquake"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

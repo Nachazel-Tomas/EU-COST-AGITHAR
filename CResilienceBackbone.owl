@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://agithar.uhk.cz/resilience#"
+     xml:base="http://agithar.uhk.cz/resilience"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:res="http://agithar.uhk.cz/resilience#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://agithar.uhk.cz/resilience">
+        <owl:versionIRI rdf:resource="http://agithar.uhk.cz/resilience/1.0.0"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://agithar.uhk.cz/resilience#cooccurringWith -->
+
+    <owl:ObjectProperty rdf:about="http://agithar.uhk.cz/resilience#cooccurringWith">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://agithar.uhk.cz/resilience#Chile -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/resilience#Chile">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://agithar.uhk.cz/resilience#cooccurringWith"/>
+                <owl:someValuesFrom rdf:resource="http://agithar.uhk.cz/resilience#CommunityResilience"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/resilience#CoastalCommunity -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/resilience#CoastalCommunity"/>
+    
+
+
+    <!-- http://agithar.uhk.cz/resilience#CommunityResilience -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/resilience#CommunityResilience">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/resilience#Resilience"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://agithar.uhk.cz/resilience#cooccurringWith"/>
+                <owl:someValuesFrom rdf:resource="http://agithar.uhk.cz/resilience#Chile"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://agithar.uhk.cz/resilience#cooccurringWith"/>
+                <owl:someValuesFrom rdf:resource="http://agithar.uhk.cz/resilience#Disaster"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://agithar.uhk.cz/resilience#cooccurringWith"/>
+                <owl:someValuesFrom rdf:resource="http://agithar.uhk.cz/resilience#DisasterRiskReduction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://agithar.uhk.cz/resilience#cooccurringWith"/>
+                <owl:someValuesFrom rdf:resource="http://agithar.uhk.cz/resilience#Earthquake"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/resilience#Disaster -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/resilience#Disaster">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://agithar.uhk.cz/resilience#cooccurringWith"/>
+                <owl:someValuesFrom rdf:resource="http://agithar.uhk.cz/resilience#Resilience"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/resilience#DisasterManagement -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/resilience#DisasterManagement"/>
+    
+
+
+    <!-- http://agithar.uhk.cz/resilience#DisasterPreparednesss -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/resilience#DisasterPreparednesss"/>
+    
+
+
+    <!-- http://agithar.uhk.cz/resilience#DisasterRecovery -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/resilience#DisasterRecovery"/>
+    
+
+
+    <!-- http://agithar.uhk.cz/resilience#DisasterRiskReduction -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/resilience#DisasterRiskReduction">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://agithar.uhk.cz/resilience#cooccurringWith"/>
+                <owl:someValuesFrom rdf:resource="http://agithar.uhk.cz/resilience#CommunityResilience"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/resilience#Earthquake -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/resilience#Earthquake">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/resilience#NaturalDisaster"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://agithar.uhk.cz/resilience#cooccurringWith"/>
+                <owl:someValuesFrom rdf:resource="http://agithar.uhk.cz/resilience#Tsunami"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/resilience#Indonesia -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/resilience#Indonesia">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://agithar.uhk.cz/resilience#cooccurringWith"/>
+                <owl:someValuesFrom rdf:resource="http://agithar.uhk.cz/resilience#Resilience"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/resilience#NaturalDisaster -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/resilience#NaturalDisaster">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/resilience#Disaster"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/resilience#Recovery -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/resilience#Recovery"/>
+    
+
+
+    <!-- http://agithar.uhk.cz/resilience#Relocation -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/resilience#Relocation"/>
+    
+
+
+    <!-- http://agithar.uhk.cz/resilience#Resilience -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/resilience#Resilience">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://agithar.uhk.cz/resilience#cooccurringWith"/>
+                <owl:someValuesFrom rdf:resource="http://agithar.uhk.cz/resilience#Disaster"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://agithar.uhk.cz/resilience#cooccurringWith"/>
+                <owl:someValuesFrom rdf:resource="http://agithar.uhk.cz/resilience#Indonesia"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://agithar.uhk.cz/resilience#cooccurringWith"/>
+                <owl:someValuesFrom rdf:resource="http://agithar.uhk.cz/resilience#Tsunami"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/resilience#Risk -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/resilience#Risk"/>
+    
+
+
+    <!-- http://agithar.uhk.cz/resilience#SocialCapital -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/resilience#SocialCapital"/>
+    
+
+
+    <!-- http://agithar.uhk.cz/resilience#Tsunami -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/resilience#Tsunami">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/resilience#NaturalDisaster"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://agithar.uhk.cz/resilience#cooccurringWith"/>
+                <owl:someValuesFrom rdf:resource="http://agithar.uhk.cz/resilience#Earthquake"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://agithar.uhk.cz/resilience#cooccurringWith"/>
+                <owl:someValuesFrom rdf:resource="http://agithar.uhk.cz/resilience#UrbanPlanning"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/resilience#UrbanPlanning -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/resilience#UrbanPlanning">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://agithar.uhk.cz/resilience#cooccurringWith"/>
+                <owl:someValuesFrom rdf:resource="http://agithar.uhk.cz/resilience#Tsunami"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/resilience#Vulnerability -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/resilience#Vulnerability"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
