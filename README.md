@@ -1,7 +1,7 @@
 # EU-COST-AGITHAR
 Paper Unification of Tsunami-Related Terminology: Ontology Engineering Perspective (2022; IN REVIEW)
 
-Ontologies: FRED-ExperimentalOntology-owl-xml.owl, TsunamiCOREBackbone.owl, CResilienceBackbone.owl, MeteotsunamiBackbone.owl, PVulnerabilityBackbone.owl, TRO.owl
+Ontologies: FRED-ExperimentalOntology-owl-xml.owl, TsunamiCOREBackbone.owl, CResilienceBackbone.owl, MeteotsunamiBackbone.owl, PVulnerabilityBackbone.owl, TRO.owl, FRED-TropicalCycloneRainbands.ttl, FRED-FrameworkProbabAnalysisTsunami.ttl, FRED-MeteotsunamiGlobalScale.ttl
 
 Contact: martina.husakova.2@uhk.cz, daniela.ponce@uhk.cz, tomas.nachazel@uhk.cz 
 
