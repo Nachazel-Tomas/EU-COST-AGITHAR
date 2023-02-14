@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://agithar.uhk.cz/tsunami-merged#"
      xml:base="http://agithar.uhk.cz/tsunami-merged"
-     xmlns:met="http://agithar.uhk.cz/meteotsunami#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:res="http://agithar.uhk.cz/resilience-subcore-merged#"
-     xmlns:tsm="http://agithar.uhk.cz/tsunami-merged#"
-     xmlns:tsu="http://agithar.uhk.cz/tsunami#"
-     xmlns:vul="http://agithar.uhk.cz/vulnerability#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:tsu="http://agithar.uhk.cz/tsunami#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vul="http://agithar.uhk.cz/vulnerability#"
+     xmlns:met="http://agithar.uhk.cz/meteotsunami#"
+     xmlns:tsm="http://agithar.uhk.cz/tsunami-merged#">
     <owl:Ontology rdf:about="http://agithar.uhk.cz/tsunami-merged"/>
     
 
@@ -2161,14 +2161,6 @@ Synonymum to perturbation.</rdfs:comment>
     
 
 
-    <!-- http://agithar.uhk.cz/meteotsunami#PhaseSpeed -->
-
-    <owl:Class rdf:about="http://agithar.uhk.cz/meteotsunami#PhaseSpeed">
-        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/meteotsunami#Speed"/>
-    </owl:Class>
-    
-
-
     <!-- http://agithar.uhk.cz/meteotsunami#Place -->
 
     <owl:Class rdf:about="http://agithar.uhk.cz/meteotsunami#Place">
@@ -2673,6 +2665,22 @@ Synonymum to perturbation.</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://agithar.uhk.cz/meteotsunami#MeteorologicalTsunami"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/meteotsunami#SpeedOfPhase -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/meteotsunami#SpeedOfPhase">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/meteotsunami#Speed"/>
+    </owl:Class>
+    
+
+
+    <!-- http://agithar.uhk.cz/meteotsunami#SpeedOfWind -->
+
+    <owl:Class rdf:about="http://agithar.uhk.cz/meteotsunami#SpeedOfWind">
+        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/meteotsunami#Speed"/>
     </owl:Class>
     
 
@@ -3195,14 +3203,6 @@ Synonymum to perturbation.</rdfs:comment>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="cs">poryv větru</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://agithar.uhk.cz/meteotsunami#WindSpeed -->
-
-    <owl:Class rdf:about="http://agithar.uhk.cz/meteotsunami#WindSpeed">
-        <rdfs:subClassOf rdf:resource="http://agithar.uhk.cz/meteotsunami#Speed"/>
     </owl:Class>
     
 
@@ -10793,14 +10793,6 @@ Synonymum to perturbation.</rdfs:comment>
     
 
 
-    <!-- http://agithar.uhk.cz/meteotsunami#AtlanticCoast -->
-
-    <owl:NamedIndividual rdf:about="http://agithar.uhk.cz/meteotsunami#AtlanticCoast">
-        <rdf:type rdf:resource="http://agithar.uhk.cz/meteotsunami#Coast"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://agithar.uhk.cz/meteotsunami#BandarDayyer -->
 
     <owl:NamedIndividual rdf:about="http://agithar.uhk.cz/meteotsunami#BandarDayyer">
@@ -10829,6 +10821,14 @@ Synonymum to perturbation.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://agithar.uhk.cz/meteotsunami#ChesapeakeBay">
         <rdf:type rdf:resource="http://agithar.uhk.cz/meteotsunami#Bay"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://agithar.uhk.cz/meteotsunami#CoastOfAtlantic -->
+
+    <owl:NamedIndividual rdf:about="http://agithar.uhk.cz/meteotsunami#CoastOfAtlantic">
+        <rdf:type rdf:resource="http://agithar.uhk.cz/meteotsunami#Coast"/>
     </owl:NamedIndividual>
     
 
@@ -10970,6 +10970,14 @@ Synonymum to perturbation.</rdfs:comment>
     
 
 
+    <!-- http://agithar.uhk.cz/resilience-subcore-merged#CoastOfOregon -->
+
+    <owl:NamedIndividual rdf:about="http://agithar.uhk.cz/resilience-subcore-merged#CoastOfOregon">
+        <rdf:type rdf:resource="http://agithar.uhk.cz/meteotsunami#Coast"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://agithar.uhk.cz/resilience-subcore-merged#EastJapanEarthquake -->
 
     <owl:NamedIndividual rdf:about="http://agithar.uhk.cz/resilience-subcore-merged#EastJapanEarthquake">
@@ -11018,14 +11026,6 @@ Synonymum to perturbation.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://agithar.uhk.cz/resilience-subcore-merged#NISTCommunityResiliencePlanningGuide">
         <rdf:type rdf:resource="http://agithar.uhk.cz/tsunami#Plan"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://agithar.uhk.cz/resilience-subcore-merged#OregonCoast -->
-
-    <owl:NamedIndividual rdf:about="http://agithar.uhk.cz/resilience-subcore-merged#OregonCoast">
-        <rdf:type rdf:resource="http://agithar.uhk.cz/meteotsunami#Coast"/>
     </owl:NamedIndividual>
     
 
@@ -11195,5 +11195,5 @@ Synonymum to perturbation.</rdfs:comment>
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
 
